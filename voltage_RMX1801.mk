@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Arrow stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 # Inherit from Realme RMX1801
@@ -28,13 +28,15 @@ $(call inherit-product, device/realme/RMX1801/device.mk)
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := arrow_RMX1801
 PRODUCT_DEVICE := RMX1801
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := oppo
 PRODUCT_MODEL := Realme 2 Pro
 PRODUCT_ARCH := arm64
-DEVICE_MAINTAINER := Baibhab
+DEVICE_MAINTAINER := Tanjiro
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 TARGET_VENDOR_PRODUCT_NAME := RMX1801
