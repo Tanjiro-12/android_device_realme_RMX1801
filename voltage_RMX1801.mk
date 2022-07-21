@@ -28,6 +28,7 @@ $(call inherit-product, device/realme/RMX1801/device.mk)
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+TARGET_INCLUDE_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := voltage_RMX1801
